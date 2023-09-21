@@ -1195,4 +1195,5 @@ box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.24);
   .section-title h2 { text-align: center; }
   .verticales .icon-box h4 { font-size: 22px;}
   .banner-bottom {padding: 0px!important;}
+  .verticales { padding:40px 0px!important;}
 }
