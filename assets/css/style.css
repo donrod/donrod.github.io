@@ -521,10 +521,11 @@ h6 {
   animation-delay: 0.8s;
   background: #05AA6C;
   float: left;
+  border-radius: 50px;
 }
 
 #servicios .btn-get-started:hover {
-  background: #df3740;
+  background: #438BCB;
 }
 
 @media (max-width: 992px) {
