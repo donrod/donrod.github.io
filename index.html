@@ -116,7 +116,7 @@
       <div class="container">
 
         <div class="row content">
-          <div class="section-title">
+          <div class="section-title animate__animated animate__fadeInLeft">
           <h2>Equipo</h2>
         </div>
 
@@ -156,7 +156,7 @@
     <section id="verticales" class="verticales">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title animate__animated animate__fadeInLeft">
           <h2>Verticales</h2>
         </div>
 
@@ -220,7 +220,7 @@
     <!-- End Services Section -->
 
     <!-- ======= Verticales Section ======= -->
-    <section class="banner-bottom animate__animated animate__fadeInDown">
+    <section class="banner-bottom animate__animated animate__fadeInUp">
       <div>&nbsp;</div>
     </section>
 
@@ -229,7 +229,7 @@
       
       <div class="container">
 
-        <div class="row animate__animated animate__fadeInDown">
+        <div class="row animate__animated animate__fadeInUp">
           
           <div class="col-md d-flex align-items-center justify-content-center">
             <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
@@ -257,7 +257,7 @@
     <section id="contact" class="contact">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title animate__animated animate__fadeInLeft">
           <h2>Contacto</h2>
           <p>Cuéntanos más de ti, queremos responder todas tus dudas o si tienes algun proyecto en mente no dudes en decirlo. Te invitamos a contactarnos a través del siguiente formulario.</p>
         </div>
@@ -293,27 +293,29 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form method="post" action="phpmailer.php" enctype="multipart/form-data" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
+                  <input type="text" name="nombre" autocapitalize="words" autocomplete="off" class="form-control" id="name" placeholder="Tu Nombre" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" required>
+                  <input type="email" class="form-control" name="email" id="email" autocomplete="off" placeholder="Tu Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Motivo" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                <textarea class="form-control" name="message" rows="6" cols="80" placeholder="Mensaje" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Cargando</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Tu mensaje ha sido enviado. Muchas gracias!</div>
               </div>
-              <div class="text-center"><button type="submit">Enviar</button></div>
+              <div class="text-center">
+                <button type="submit">Enviar</button>
+              </div>
             </form>
 
           </div>
